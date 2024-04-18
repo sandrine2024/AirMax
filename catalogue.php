@@ -29,7 +29,7 @@ $produits = $pdoStatement->fetchAll(); récupère toutes les lignes de la requê
                     <h3><?php echo $article['titre']; ?></h3>
                     <img src="<?= $article['url_image'] ?>" alt="<?=$article['titre']?>" style="height:300px; width:200px" >
                     <div class="d-flex justify-content-between mt-5"> 
-                        <a href="panier.php?id=<?= $article['id_article']; ?>"  class="fa-solid fa-basket-shopping  " style="color: #aed7ae; border: none; background-color : transparent"></a>                   
+                        <a  href="panier.php?id=<?= $article['id_article']; ?>"  class="fa-solid fa-basket-shopping  " style="color: #aed7ae; border: none"></a>                   
                         <h5 "><?php echo $article['prix']; ?>€</h5>
                     </div>
                 </a>
